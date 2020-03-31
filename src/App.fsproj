@@ -4,6 +4,14 @@
     </PropertyGroup>
     <ItemGroup>
         <Compile Include="Constants.fs" />
+        <Compile Include="HtmlUtilities.fs" />
+
+        <Compile Include="Components/Navbar.fs" />
+
+        <Compile Include="Pages/Home.fs" />
+        <Compile Include="Pages/Settings.fs" />
+        <Compile Include="Pages/Contacts.fs" />
+        
         <Compile Include="App.fs" />
         <Compile Include="Main.fs" />
     </ItemGroup>

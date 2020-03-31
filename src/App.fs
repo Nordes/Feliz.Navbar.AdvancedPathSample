@@ -257,6 +257,7 @@ let mainLayout (state: State) (dispatch: Msg -> unit) (xs: ReactElement list) =
 let render (state: State) (dispatch: Msg -> unit) =
     let activePage =
         match state.CurrentUrl with
+        // Home
         | [  ] ->
             React.fragment [
                 Html.h1 "Navigation Bar with Feliz"
@@ -273,8 +274,11 @@ let render (state: State) (dispatch: Msg -> unit) =
                 ]
             ]
 
+        // Contacts
         | [ "contacts" ] -> Html.h1 "Contacts"
+        // Settings
         | [ "settings" ] -> Html.h1 "Settings"
+        // 404..
         | _              -> Html.none
 
     mainLayout state dispatch  [
